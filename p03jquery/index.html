@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tabel jQuery</title>
+	<style>
+		body {
+    background-color: #eee;
+}
+
+h1 {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+h1:hover {
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+}
+
+table th, table td {
+    border: 1px solid;
+    padding: 10px;
+}
+
+table th {
+    background-color: lightblue;
+}
+
+table tr {
+    background-color: white;
+}
+
+table tr:hover {
+    background-color: lightblue;
+}
+
+.nama:hover {
+    cursor: pointer;
+}
+
+.alamat:hover {
+    cursor: pointer;
+}
+
+.kembali {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.kembali:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+.hapus {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.hapus:hover {
+    cursor: pointer;
+    background-color: darkred;
+}
+	</style>
+</head>
+<body>
+	<h1>The Top 5 of My Best Friend</h1>
+	<div class="content">
+		<table>
+			<thead>
+				<tr>
+					<th width="30">No</th>
+					<th>Nama</th>
+					<th>Alamat</th>
+					<th>Aksi</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr id="row_1">
+					<td>1</td>
+					<td class="nama">Ferdi Gusnanto</td>
+					<td class="alamat">Gebang</td>
+					<td><button class="hapus" id="hapus_1">Delete</button></td>
+				</tr>
+				<tr id="row_2">
+					<td>2</td>
+					<td class="nama">Muhammad Adhitya Pratama</td>
+					<td class="alamat">Bojong Gebang</td>
+					<td><button class="hapus" id="hapus_2">Delete</button></td>
+				</tr>
+				<tr id="row_3">
+					<td>3</td>
+					<td class="nama">Satrio</td>
+					<td class="alamat">Hulubanteng</td>
+					<td><button class="hapus" id="hapus_3">Delete</button></td>
+				</tr>
+				<tr id="row_4">
+					<td>4</td>
+					<td class="nama">Muhammad Abdul Fattah</td>
+					<td class="alamat">Waled</td>
+					<td><button class="hapus" id="hapus_4">Delete</button></td>
+				</tr>
+				<tr id="row_5">
+					<td>5</td>
+					<td class="nama">Lilis Fatimah</td>
+					<td class="alamat">Lemah Abang</td>
+					<td><button class="hapus" id="hapus_5">Delete</button></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<button class="kembali" onclick="history.go(-1)">Kembali</button>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.nama').click(function(){
+				let nama = $(this).text()
+				let edit = prompt('Edit Nama:', nama)
+
+				if(!edit) return
+				$(this).text(edit)
+			})
+			$('.alamat').click(function(){
+				let alamat = $(this).text()
+				let edit = prompt('Edit Alamat:', alamat)
+
+				if(!edit) return
+				$(this).text(edit)
+			})
+			$('.hapus').click(function(){
+				let yakin = confirm('Anda yakin ingin menghapusnya?')
+
+				if(!yakin) return
+				let id = $(this).prop('id')
+				let rid = id.split('_')
+				let baris = rid[1]
+				$('#row_'+baris).slideUp()
+			})
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.formulir {
+	margin: 2%;
+}
+
+fieldset {
+	border-radius: 10px;
+	margin: 5px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+button {
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.kembali {
+	background-color: red;
+	color: white;
+	transition: 0.2s;
+}
+
+.kembali:hover {
+	background-color: green;
+}
+
+.submit {
+	background-color: blue;
+	color: white;
+	transition: 0.2s;
+}
+
+.submit:hover {
+	background-color: darkblue;
+}

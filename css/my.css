@@ -28,13 +28,14 @@ h2:hover{
 	color: #333;
 }
 
+.top{
+	margin: 0 0 10px;
+	transition: 0.5s;
+}
+
 h3{
 	margin: 15px;
 	text-align: center;
-}
-
-.top{
-	margin: 0 0 10px;
 }
 
 h4{
@@ -47,13 +48,6 @@ h4:hover{
 	color: #333;
 }
 
-blockquote{
-	margin: 20px 0 10px;
-	font-family: monospace;
-	text-align: center;
-	transition: 0.5s;
-}
-
 a{
 	color: blue;
 	text-decoration: none;
@@ -63,23 +57,21 @@ a:hover{
 	text-decoration: underline;
 }
 
-.header{
-	background-color: black;
-	padding: 5px 10px 20px;
+.nim{
 	text-align: center;
-	border: 1px solid lightblue;
-	border-radius: 5px 5px 0 0;
+	margin: -10px 0 0;
+	font-weight: bold;
 }
 
 .navigasi{
-    background-color: lightblue;
+    background-color: blue;
     padding: 10px 0;
 }
 
 .menu{
 	margin: 0;
 	padding: 10px;
-    color: black;
+    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -89,32 +81,26 @@ a:hover{
 }
 
 .menu:hover{
-	background-color: blue;
-	color: white;
+	background-color: darkblue;
 }
 
 .aktif{
-	background-color: blue;
-	color: white;
+	background-color: darkblue;
 }
 
 .home{
 	background-color: white;
 	padding: 20px;
-	border-left: 1px solid lightblue;
-	border-right: 1px solid lightblue;
-	border-bottom: 1px solid lightblue;
+	border-left: 1px solid blue;
+	border-right: 1px solid blue;
+	border-bottom: 1px solid blue;
 }
 
 .isi{
 	display: none;
 	background-color: white;
 	padding: 20px;
-	border-left: 1px solid lightblue;
-	border-right: 1px solid lightblue;
-	border-bottom: 1px solid lightblue;
-}
-
-.list{
-	margin-bottom: 10px;
+	border-left: 1px solid blue;
+	border-right: 1px solid blue;
+	border-bottom: 1px solid blue;
 }

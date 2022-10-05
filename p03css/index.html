@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tabel CSS</title>
+	<style>
+		body {
+    background-color: #eee;
+}
+
+h1 {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+h1:hover {
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+}
+
+table th, table td {
+    border: 1px solid;
+    padding: 10px;
+}
+
+table th {
+    background-color: lightblue;
+}
+
+table tr {
+    background-color: green;
+}
+
+table tr:hover {
+    background-color: white;
+}
+
+.nama:hover {
+    cursor: pointer;
+}
+
+.alamat:hover {
+    cursor: pointer;
+}
+
+.kembali {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.kembali:hover {
+    cursor: pointer;
+    background-color: darkblue;
+}
+
+.hapus {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.hapus:hover {
+    cursor: pointer;
+    background-color: red;
+}
+	</style>
+</head>
+<body>
+	<h1>The Top 5 of My Best Friend</h1>
+	<div class="content">
+		<table>
+			<thead>
+				<tr>
+					<th width="30">No</th>
+					<th>Nama</th>
+					<th>Alamat</th>
+					<th>Aksi</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Ferdi Gusnanto</td>
+					<td>Gebang</td>
+					<td><button class="hapus">Delete</button></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Muhammad Adhitya Pratama</td>
+					<td>Bojong Gebang</td>
+					<td><button class="hapus">Delete</button></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Satrio</td>
+					<td>Hulubanteng</td>
+					<td><button class="hapus">Delete</button></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Muhammad Abdul Fattah</td>
+					<td>Waled</td>
+					<td><button class="hapus">Delete</button></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Lilis Fatimah</td>
+					<td>Lemah Abang</td>
+					<td><button class="hapus">Delete</button></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<button class="kembali" onclick="history.go(-1)">Kembali</button>
+	</div>
+</body>
+</html>

@@ -27,13 +27,13 @@ p{
 }
 
 .navigasi{
-    background-color: lightblue;
+    background-color: blue;
     padding: 10px;
 }
 
 .menu{
 	padding: 10px;
-    color: black;
+    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -42,13 +42,11 @@ p{
 }
 
 .menu:hover{
-	background-color: blue;
-	color: white;
+	background-color: darkblue;
 }
 
 .aktif{
-	background-color: blue;
-	color: white;
+	background-color: darkblue;
 }
 
 .home{
