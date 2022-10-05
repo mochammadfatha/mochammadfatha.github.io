@@ -1,0 +1,67 @@
+body{
+	background-color: #eee;
+}
+
+img{
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	cursor: pointer;
+	width: 150px;
+	border-radius: 50%;
+	box-shadow: 1px 1px 4px gray;
+	padding: 5px;
+	transition: 0.2s;
+}
+
+img:hover{
+	transform: scale(1.1);
+}
+
+h3{
+	text-align: center;
+}
+
+.content{
+	margin: 5%;
+}
+
+.tombol{
+	text-align: center;
+    background-color: lightblue;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.tombol:hover{
+	background-color: blue;
+	color: white;
+}
+
+.isi{
+	background-color: white;
+    padding: 20px 20px 5px;
+    display: none;
+    text-align: justify;
+}
+
+.kembali{
+	border: none;
+	border-radius: 5px;
+	background-color: red;
+	color: white;
+	padding: 10px;
+	margin-top: 30px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.kembali:hover{
+	background-color: green;
+}
